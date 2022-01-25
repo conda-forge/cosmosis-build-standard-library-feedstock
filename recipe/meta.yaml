@@ -33,6 +33,7 @@ requirements:
     - libblas
     - liblapack
     - camb
+    - make
     # for running python standard library modules
     - fitsio
     - astropy
