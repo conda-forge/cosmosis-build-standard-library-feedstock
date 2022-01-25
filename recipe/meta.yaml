@@ -38,6 +38,7 @@ requirements:
     - astropy
     - cython
     - scikit-learn
+    - fast-pt
 
 
 test:
