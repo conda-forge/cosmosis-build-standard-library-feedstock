@@ -10,7 +10,7 @@ source:
   sha256: d818aa4f0bebf3d5507014a7042caf1f39636215a348322129647e51fa874055
 
 build:
-  number: 1
+  number: 2
   skip: True  # [(py < 36) or win]
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -33,11 +33,13 @@ requirements:
     - libblas
     - liblapack
     - camb
+    - make
     # for running python standard library modules
     - fitsio
     - astropy
     - cython
     - scikit-learn
+    - fast-pt
 
 
 test:
