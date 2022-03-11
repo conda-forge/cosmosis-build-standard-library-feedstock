@@ -5,11 +5,15 @@ channel_sources:
 channel_targets:
 - conda-forge main
 llvm_openmp:
-- '11'
+- '12'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mpi:
 - mpich
+mpich:
+- '4'
+openmpi:
+- '4'
 pin_run_as_build:
   python:
     min_pin: x.x
