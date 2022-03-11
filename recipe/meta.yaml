@@ -1,5 +1,5 @@
 {% set name = "cosmosis-build-standard-library" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url:  https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d818aa4f0bebf3d5507014a7042caf1f39636215a348322129647e51fa874055
+  sha256: 0b28d82a44272ec6ba32f3e90343516cc9c6e83625127ff02734e19bf8cae45a
 
 build:
-  number: 2
+  number: 0
   skip: True  # [(py < 36) or win]
   script: "{{ PYTHON }} -m pip install . -vv"
 
