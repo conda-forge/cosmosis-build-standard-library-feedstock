@@ -1,7 +1,7 @@
 About cosmosis-build-standard-library
 =====================================
 
-Home: https://github.com/joezuntz/cosmosis
+Home: https://github.com/joezuntz/cosmosis-standard-library
 
 Package license: BSD-2-Clause
 
@@ -14,7 +14,7 @@ Development: https://github.com/joezuntz/cosmosis
 Documentation: https://cosmosis.readthedocs.io/
 
 This is a meta-package providing the dependencies for the CosmoSIS Standard
-Library, to be replaced later by a version of the library itself.
+Library.
 
 
 Current build status
