@@ -1,6 +1,6 @@
 {% set name = "cosmosis-build-standard-library" %}
-{% set version = "1.0" %}
-{% set version_for_conda = "1.1" %}
+{% set version = "1.2" %}
+{% set version_for_conda = "1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url:  https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 98b71c4cc89b87b32f5ea7457a5b66a709a855e81ed1e0c448782bdec993060b
+  sha256: e7f68f31d77b84563b7fce8b7256d142b232185758982b96e25ffb63e01a3e42
 
 build:
   number: 0
@@ -45,18 +45,19 @@ requirements:
 
 test:
   commands:
-    - cosmosis-build-standard-library && cd cosmosis-standard-library && cosmosis demos/demo1.ini && cosmosis-postprocess demos/demo1.ini
-    - test -f matter_power.png
+    - cosmosis-build-standard-library && cd cosmosis-standard-library && cosmosis demos/demo1.ini && cosmosis-postprocess demos/demo1.ini && test -f matter_power.png
+    # Test in-place build
+    - cosmosis-build-standard-library -i && cd  `python -c 'import cosmosis;print(cosmosis.__file__)' | xargs dirname` && cd cosmosis-standard-library && cosmosis demos/demo1.ini && cosmosis-postprocess demos/demo1.ini && test -f matter_power.png
 
 about:
-  home: https://github.com/joezuntz/cosmosis
+  home: https://github.com/joezuntz/cosmosis-standard-library
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
   summary: CosmoSIS Standard Library
   description: |
     This is a meta-package providing the dependencies for the CosmoSIS Standard
-    Library, to be replaced later by a version of the library itself.
+    Library.
   doc_url: https://cosmosis.readthedocs.io/
   dev_url: https://github.com/joezuntz/cosmosis
 
