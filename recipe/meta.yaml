@@ -44,7 +44,7 @@ requirements:
     - cython
     - scikit-learn
     - fast-pt
-    - zipp<3.16  # [py==37]
+    - zipp <3.16  # [py==37]
 
 
 test:
