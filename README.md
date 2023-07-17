@@ -1,11 +1,11 @@
-About cosmosis-build-standard-library
-=====================================
+About cosmosis-build-standard-library-feedstock
+===============================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cosmosis-build-standard-library-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/joezuntz/cosmosis-standard-library
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cosmosis-build-standard-library-feedstock/blob/main/LICENSE.txt)
 
 Summary: CosmoSIS Standard Library
 
