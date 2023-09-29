@@ -47,9 +47,9 @@ requirements:
     - tensorflow >=2.6.0
     - deepdish
 
-
 test:
-  requires: [pytest]
+  requires:
+    - pytest
   commands:
     - cosmosis-build-standard-library && cd cosmosis-standard-library && pytest -v tests
     # Test in-place build
