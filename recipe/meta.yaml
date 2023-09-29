@@ -11,7 +11,7 @@ source:
   sha256: e7f68f31d77b84563b7fce8b7256d142b232185758982b96e25ffb63e01a3e42
 
 build:
-  number: 3
+  number: 4
   skip: True  # [(py < 36) or win]
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -44,11 +44,14 @@ requirements:
     - cython <3.0.0
     - scikit-learn
     - fast-pt
+    - tensorflow >=2.6.0
+    - deepdish
 
 
 test:
+  requires: [pytest]
   commands:
-    - cosmosis-build-standard-library && cd cosmosis-standard-library && cosmosis demos/demo1.ini && cosmosis-postprocess demos/demo1.ini && test -f matter_power.png
+    - cosmosis-build-standard-library && cd cosmosis-standard-library && pytest -v tests
     # Test in-place build
     - cosmosis-build-standard-library -i && cd  `python -c 'import cosmosis;print(cosmosis.__file__)' | xargs dirname` && cd cosmosis-standard-library && cosmosis demos/demo1.ini && cosmosis-postprocess demos/demo1.ini && test -f matter_power.png
 
