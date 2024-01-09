@@ -44,7 +44,7 @@ requirements:
     - cython <3.0.0
     - scikit-learn
     - fast-pt
-    - tensorflow >=2.6.0
+    - tensorflow >=2.6.0,<2.15.0
     - deepdish
 
 test:
