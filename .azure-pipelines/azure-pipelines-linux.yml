@@ -8,36 +8,28 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_mpimpichpython3.10.____cpython:
-        CONFIG: linux_64_mpimpichpython3.10.____cpython
+      linux_64_mpimpichpython3.10:
+        CONFIG: linux_64_mpimpichpython3.10
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_mpimpichpython3.11.____cpython:
-        CONFIG: linux_64_mpimpichpython3.11.____cpython
+      linux_64_mpimpichpython3.11:
+        CONFIG: linux_64_mpimpichpython3.11
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_mpimpichpython3.8.____cpython:
-        CONFIG: linux_64_mpimpichpython3.8.____cpython
+      linux_64_mpimpichpython3.12:
+        CONFIG: linux_64_mpimpichpython3.12
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_mpimpichpython3.9.____cpython:
-        CONFIG: linux_64_mpimpichpython3.9.____cpython
+      linux_64_mpiopenmpipython3.10:
+        CONFIG: linux_64_mpiopenmpipython3.10
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_mpiopenmpipython3.10.____cpython:
-        CONFIG: linux_64_mpiopenmpipython3.10.____cpython
+      linux_64_mpiopenmpipython3.11:
+        CONFIG: linux_64_mpiopenmpipython3.11
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_mpiopenmpipython3.11.____cpython:
-        CONFIG: linux_64_mpiopenmpipython3.11.____cpython
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_mpiopenmpipython3.8.____cpython:
-        CONFIG: linux_64_mpiopenmpipython3.8.____cpython
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_mpiopenmpipython3.9.____cpython:
-        CONFIG: linux_64_mpiopenmpipython3.9.____cpython
+      linux_64_mpiopenmpipython3.12:
+        CONFIG: linux_64_mpiopenmpipython3.12
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360
