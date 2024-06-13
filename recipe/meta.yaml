@@ -41,7 +41,7 @@ requirements:
     # for running python standard library modules
     - fitsio
     - astropy
-    - cython <3.0.0
+    - cython >=3.0.0
     - scikit-learn
     - fast-pt
     - tensorflow >=2.6.0,<2.15.0
