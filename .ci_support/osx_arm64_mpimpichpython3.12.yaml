@@ -1,11 +1,17 @@
-cdt_name:
-- cos6
+MACOSX_DEPLOYMENT_TARGET:
+- '11.0'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '11.0'
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
-docker_image:
-- quay.io/condaforge/linux-anvil-cos7-x86_64
+llvm_openmp:
+- '16'
+macos_machine:
+- arm64-apple-darwin20.0.0
 mpi:
 - mpich
 mpich:
@@ -17,6 +23,6 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_cpython
+- '3.12'
 target_platform:
-- linux-64
+- osx-arm64
