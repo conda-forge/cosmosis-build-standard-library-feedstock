@@ -40,7 +40,7 @@ requirements:
     - make
     # cosmosis can cope with numpy v2, but some standard
     # library modules cannot yet
-    - numpy < 2
+    - numpy <2
     # for running python standard library modules
     - fitsio
     - astropy
