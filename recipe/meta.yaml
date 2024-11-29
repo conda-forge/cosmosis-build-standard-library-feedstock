@@ -40,7 +40,7 @@ requirements:
     - make
     - numpy
     # for running python standard library modules
-    - astropy
+    - astropy-base
     - cython
     - scikit-learn
     - fast-pt
