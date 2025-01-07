@@ -16,3 +16,8 @@ numpy:
   - 1.26
   - 1.26
   - 1.26
+
+is_python_min:
+  - true
+  - false
+  - false

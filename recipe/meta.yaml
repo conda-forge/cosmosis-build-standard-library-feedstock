@@ -11,7 +11,7 @@ source:
   sha256: e7f68f31d77b84563b7fce8b7256d142b232185758982b96e25ffb63e01a3e42
 
 build:
-  number: 11
+  number: 12
   skip: True  # [(py < 36) or win]
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -45,7 +45,6 @@ requirements:
     - cython
     - scikit-learn
     - fast-pt
-    - tensorflow >=2.6.0,<2.15.0  # [py < 312]
     - deepdish
     - sacc
 
