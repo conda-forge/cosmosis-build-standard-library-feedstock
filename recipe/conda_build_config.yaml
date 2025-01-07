@@ -17,7 +17,7 @@ numpy:
   - 1.26
   - 1.26
 
-zip_keys:
-  - python
-  - python_impl
-  - numpy
+is_python_min:
+  - true
+  - false
+  - false
