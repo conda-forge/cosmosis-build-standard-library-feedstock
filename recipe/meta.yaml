@@ -45,7 +45,6 @@ requirements:
     - cython
     - scikit-learn
     - fast-pt
-    - tensorflow >=2.6.0,<2.15.0  # [py < 312]
     - deepdish
     - sacc
 
