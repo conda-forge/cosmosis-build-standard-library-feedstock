@@ -11,7 +11,7 @@ llvm_openmp:
 macos_machine:
 - arm64-apple-darwin20.0.0
 mpi:
-- mpich
+- openmpi
 mpich:
 - '4'
 openmpi:
@@ -21,6 +21,6 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- '3.11'
+- 3.13.* *_cp313
 target_platform:
 - osx-arm64
