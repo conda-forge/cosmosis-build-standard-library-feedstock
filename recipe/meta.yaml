@@ -12,7 +12,7 @@ source:
 
 build:
   number: 13
-  skip: True  # [(py < 36) or win]
+  skip: true  # [( (py < 310) or win ) or ( (mpi == "openmpi") and linux )]
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
