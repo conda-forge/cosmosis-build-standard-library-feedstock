@@ -10,7 +10,7 @@ source:
   sha256: 4be70b07dd6d557021327f30b8f8561c8e78a37c5e5201ab23968166dd408414
 
 build:
-  number: 1
+  number: 2
   skip: true  # [( (py < 310) or win ) or ( (mpi == "openmpi") and linux )]
   script: "{{ PYTHON }} -m pip install . -vv"
 
