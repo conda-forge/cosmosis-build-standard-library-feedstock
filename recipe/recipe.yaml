@@ -64,8 +64,8 @@ tests:
         - pytest
         - camb ==2.0.0
     script:
-      - export CSL_REPO=https://github.com/beckermr/cosmosis-standard-library.git
-      - export CSL_BRANCH=beckermr-patch-1
+      - export CSL_REPO=https://github.com/cosmosis-developers/cosmosis-standard-library.git
+      - export CSL_BRANCH=main
       - cosmosis-build-standard-library ${CSL_BRANCH} && cd cosmosis-standard-library && source cosmosis-configure && pytest -vv tests
       - cosmosis-build-standard-library -i ${CSL_BRANCH} && cd  `python -c 'import cosmosis;print(cosmosis.__file__)' | xargs dirname` && cd cosmosis-standard-library && cosmosis demos/demo1.ini && cosmosis-postprocess demos/demo1.ini && test -f matter_power.png
   - requirements:
@@ -73,8 +73,8 @@ tests:
         - pytest
         - camb ==1.6.5
     script:
-      - export CSL_REPO=https://github.com/beckermr/cosmosis-standard-library.git
-      - export CSL_BRANCH=beckermr-patch-1
+      - export CSL_REPO=https://github.com/cosmosis-developers/cosmosis-standard-library.git
+      - export CSL_BRANCH=main
       - cosmosis-build-standard-library ${CSL_BRANCH} && cd cosmosis-standard-library && source cosmosis-configure && pytest -vv tests
       - cosmosis-build-standard-library -i ${CSL_BRANCH} && cd  `python -c 'import cosmosis;print(cosmosis.__file__)' | xargs dirname` && cd cosmosis-standard-library && cosmosis demos/demo1.ini && cosmosis-postprocess demos/demo1.ini && test -f matter_power.png
 
