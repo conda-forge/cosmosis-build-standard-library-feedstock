@@ -13,7 +13,7 @@ source:
   sha256: 4be70b07dd6d557021327f30b8f8561c8e78a37c5e5201ab23968166dd408414
 
 build:
-  number: 5
+  number: 6
   skip: ( (match(python, "<3.10")) or win )
   script: ${{ PYTHON }} -m pip install . -vv
 
@@ -47,7 +47,7 @@ requirements:
     - liblapack
     - camb >=1.6.5
     - make
-    - numpy >=2.4
+    - numpy >=2.3
     # for running python standard library modules
     - astropy-base
     - cython
