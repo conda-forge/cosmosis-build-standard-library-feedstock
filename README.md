@@ -13,8 +13,7 @@ Development: https://github.com/joezuntz/cosmosis
 
 Documentation: https://cosmosis.readthedocs.io/
 
-This is a meta-package providing the dependencies for the CosmoSIS Standard
-Library.
+This is a meta-package providing the dependencies for the CosmoSIS Standard Library.
 
 Current build status
 ====================
